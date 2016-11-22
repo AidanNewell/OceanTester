@@ -135,15 +135,4 @@ public class OceanTester extends AssignmentTester{
 	{
 		return new Boat(names.substring(names.indexOf(s.substring(1,2)),names.indexOf(".",names.indexOf(s.substring(1,2)))),new Position(Integer.parseInt(s.substring(2,3)),Integer.parseInt(s.substring(3,4))),orientations.substring(orientations.indexOf(s.substring(0,1)),orientations.indexOf(".",orientations.indexOf(s.substring(0,1)))));
 	}
-	
-	public static void main(String [] args)
-	{
-		OceanTester t = new OceanTester();
-		System.out.println(boats[576]);
-		Boat boat = t.buildBoat(boats[576]);
-		System.out.println(boat.name());
-		System.out.println(boat.abbreviation());
-		System.out.println(boat.position());
-		System.out.println(boat.direction());
-	}
 }
