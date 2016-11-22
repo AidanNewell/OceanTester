@@ -122,9 +122,28 @@ public class OceanTester extends AssignmentTester{
 											"vD70","vD71","vD72","vD73","vD74","vD75","vD76","vD77","vD78","vD79",
 											"vD80","vD81","vD82","vD83","vD84","vD85","vD86","vD87","vD88","vD89",
 											"vD90","vD91","vD92","vD93","vD94","vD95","vD96","vD97","vD98","vD99"};
-
+	
+	private String names = "Cruiser.AircraftCarrier.Battleship.Submarine.Destroyer.";
+	private String orientations = "vertical.horizontal.";
+	
 	protected AssignmentTestCase[] getCases()
 	{
 		return null;
+	}
+	
+	private Boat buildBoat(String s)
+	{
+		return new Boat(names.substring(names.indexOf(s.substring(1,2)),names.indexOf(".",names.indexOf(s.substring(1,2)))),new Position(Integer.parseInt(s.substring(2,3)),Integer.parseInt(s.substring(3,4))),orientations.substring(orientations.indexOf(s.substring(0,1)),orientations.indexOf(".",orientations.indexOf(s.substring(0,1)))));
+	}
+	
+	public static void main(String [] args)
+	{
+		OceanTester t = new OceanTester();
+		System.out.println(boats[576]);
+		Boat boat = t.buildBoat(boats[576]);
+		System.out.println(boat.name());
+		System.out.println(boat.abbreviation());
+		System.out.println(boat.position());
+		System.out.println(boat.direction());
 	}
 }

@@ -1,60 +1,39 @@
 
 public class OceanTestCase extends AssignmentTestCase{
+
 	private Boat[] boats;
 	private Position[] positions;
-	private OceanProblemFinder problemFinder;
 	private Ocean ocean;
 	private GoodOcean goodOcean;
-	public OceanTestCase(Boat[] boats, Position[] positions){
-		this.boats = boats;
-		this.positions = positions;
-		problemFinder = new OceanProblemFinder();
-		ocean = new Ocean();
-		goodOcean = new GoodOcean();
+	
+	public OceanTestCase(Boat[] boats, Position[] positions)
+	{
+		System.arraycopy(boats, 0, this.boats, 0, boats.length);
+		System.arraycopy(positions, 0, this.positions, 0, positions.length);
+		
 	}
-	protected boolean runTestCase() {
-		if(boats == null || boats.length == 0){
-			if(problemFinder.findProblem() != null)
-				System.out.println(problemFinder.findProblem());
+	
+	protected boolean runTestCase()
+	{
+		OceanProblemFinder problemFinder = new OceanProblemFinder();
+		boolean oceanError = false;
+		boolean goodOceanError = false;
+		if(boats == null || boats.length == 0)
+		{
+			problemFinder.findProblem();
+			//TODO: Use return value for error reporting
 		}
-		boolean goodOceanErrorH;
-		boolean oceanErrorH;
-		boolean goodOceanErrorV;
-		boolean oceanErrorV;
-		for(int i = 0; i<boats.length;i++){
-			goodOceanErrorH = false;
-			oceanErrorH = false;
-			goodOceanErrorV = false;
-			oceanErrorV = false;
-			try{ // places horizontal
-				ocean.placeBoat(boats[i].name(), "horizontal",positions[i]);
-			}catch (Exception e){
-				oceanErrorH = true;
-			}
+		for(int x=0; x<boats.length;x++)
+		{
+			Boat currentBoat = boats[x];
 			try{
-				goodOcean.placeBoat(boats[i].name(), "horizontal",positions[i]);
-			}catch (Exception e){
-				goodOceanErrorH = true;
-			}
-			try{ //places vertical
-				ocean.placeBoat(boats[i].name(), "vertical", positions[i]);
-			}catch (Exception e){
-				oceanErrorV = true;
-			}
+				ocean.placeBoat(currentBoat.name(),currentBoat.direction(),currentBoat.position());
+			}catch(Exception e){};
 			try{
-				goodOcean.placeBoat(boats[i].name(), "vertical", positions[i]);
-			}catch (Exception e){
-				goodOceanErrorV = true;
-			}
-			if(oceanErrorH != goodOceanErrorH || oceanErrorV != goodOceanErrorV){
-				for(int j = 0; j<i; j++){
-					
-				}
-				break;
-			}
-			
+				goodOcean.placeBoat(currentBoat.name(),currentBoat.direction(),currentBoat.position());
+			}catch(Exception e){};
 		}
-		return false;
 	}
+	
 
 }
