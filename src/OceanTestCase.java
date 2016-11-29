@@ -22,6 +22,7 @@ public class OceanTestCase extends AssignmentTestCase{
 		{
 			problemFinder.findProblem();
 			//TODO: Use return value for error reporting
+			return false;
 		}
 		for(int x=0; x<boats.length;x++)
 		{
@@ -35,6 +36,7 @@ public class OceanTestCase extends AssignmentTestCase{
 			if(oceanError != goodOceanError)
 			{
 				//Error reporting
+				return false;
 			}
 			oceanError = false;
 			goodOceanError = false;
@@ -48,6 +50,7 @@ public class OceanTestCase extends AssignmentTestCase{
 			if(oceanError != goodOceanError)
 			{
 				//error reporting
+				return false;
 			}
 			oceanError = false;
 			goodOceanError = false;
@@ -60,27 +63,33 @@ public class OceanTestCase extends AssignmentTestCase{
 			if(ocean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())) != goodOcean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())))
 			{
 				//errorReportinggggg
+				return false;
 			}
 			if(ocean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex()))) != goodOcean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex())))
 			{
 				//errorReporting
+				return false;
 			}
 			if(ocean.allSunk() != goodOcean.allSunk())
 			{
 				//errorReporting
+				return false;
 			}
 			if(goodOcean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())))
 			{
 				if(!(ocean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex())).equals(goodOcean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex())))))
 				{
 					//errorReporting
+					return false;
 				}
 				if(!(ocean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex())).equals(goodOcean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex())))))
 				{
 					//errorReporting
+					return false;
 				}
 			}
 		}
+		return true;
 	}
 
 

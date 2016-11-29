@@ -128,11 +128,24 @@ public class OceanTester extends AssignmentTester{
 	
 	protected AssignmentTestCase[] getCases()
 	{
-		return null;
+		AssignmentTestCase[] tests = new AssignmentTestCase[1];
+		tests[0] = new OceanTestCase(null,null);
+		return tests;
+	}
+	
+	private Boat[] buildFleet(int[] stringPositions)
+	{
+		Boat[] fleet = new Boat[stringPositions.length];
+		for(int x=0; x< fleet.length;x++)
+		{
+			fleet[x] = buildBoat(boats[stringPositions[x]]);
+		}
+		return fleet;
 	}
 	
 	private Boat buildBoat(String s)
 	{
+		//This will build you literally ANY BOAT you want, just feed it the string from the above array
 		return new Boat(names.substring(names.indexOf(s.substring(1,2)),names.indexOf(".",names.indexOf(s.substring(1,2)))),new Position(Integer.parseInt(s.substring(2,3)),Integer.parseInt(s.substring(3,4))),orientations.substring(orientations.indexOf(s.substring(0,1)),orientations.indexOf(".",orientations.indexOf(s.substring(0,1)))));
 	}
 }
