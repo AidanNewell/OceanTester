@@ -32,46 +32,6 @@ public class OceanTester extends AssignmentTester{
 											"hA70","hA71","hA72","hA73","hA74","hA75","hA76","hA77","hA78","hA79",
 											"hA80","hA81","hA82","hA83","hA84","hA85","hA86","hA87","hA88","hA89",
 											"hA90","hA91","hA92","hA93","hA94","hA95","hA96","hA97","hA98","hA99",
-											"hB00","hB01","hB02","hB03","hB04","hB05","hB06","hB07","hB08","hB09",
-											"hB10","hB11","hB12","hB13","hB14","hB15","hB16","hB17","hB18","hB19",
-											"hB20","hB21","hB22","hB23","hB24","hB25","hB26","hB27","hB28","hB29",
-											"hB30","hB31","hB32","hB33","hB34","hB35","hB36","hB37","hB38","hB39",
-											"hB40","hB41","hB42","hB43","hB44","hB45","hB46","hB47","hB48","hB49",
-											"hB50","hB51","hB52","hB53","hB54","hB55","hB56","hB57","hB58","hB59",
-											"hB60","hB61","hB62","hB63","hB64","hB65","hB66","hB67","hB68","hB69",
-											"hB70","hB71","hB72","hB73","hB74","hB75","hB76","hB77","hB78","hB79",
-											"hB80","hB81","hB82","hB83","hB84","hB85","hB86","hB87","hB88","hB89",
-											"hB90","hB91","hB92","hB93","hB94","hB95","hB96","hB97","hB98","hB99",
-											"hC00","hC01","hC02","hC03","hC04","hC05","hC06","hC07","hC08","hC09",
-											"hC10","hC11","hC12","hC13","hC14","hC15","hC16","hC17","hC18","hC19",
-											"hC20","hC21","hC22","hC23","hC24","hC25","hC26","hC27","hC28","hC29",
-											"hC30","hC31","hC32","hC33","hC34","hC35","hC36","hC37","hC38","hC39",
-											"hC40","hC41","hC42","hC43","hC44","hC45","hC46","hC47","hC48","hC49",
-											"hC50","hC51","hC52","hC53","hC54","hC55","hC56","hC57","hC58","hC59",
-											"hC60","hC61","hC62","hC63","hC64","hC65","hC66","hC67","hC68","hC69",
-											"hC70","hC71","hC72","hC73","hC74","hC75","hC76","hC77","hC78","hC79",
-											"hC80","hC81","hC82","hC83","hC84","hC85","hC86","hC87","hC88","hC89",
-											"hC90","hC91","hC92","hC93","hC94","hC95","hC96","hC97","hC98","hC99",
-											"hS00","hS01","hS02","hS03","hS04","hS05","hS06","hS07","hS08","hS09",
-											"hS10","hS11","hS12","hS13","hS14","hS15","hS16","hS17","hS18","hS19",
-											"hS20","hS21","hS22","hS23","hS24","hS25","hS26","hS27","hS28","hS29",
-											"hS30","hS31","hS32","hS33","hS34","hS35","hS36","hS37","hS38","hS39",
-											"hS40","hS41","hS42","hS43","hS44","hS45","hS46","hS47","hS48","hS49",
-											"hS50","hS51","hS52","hS53","hS54","hS55","hS56","hS57","hS58","hS59",
-											"hS60","hS61","hS62","hS63","hS64","hS65","hS66","hS67","hS68","hS69",
-											"hS70","hS71","hS72","hS73","hS74","hS75","hS76","hS77","hS78","hS79",
-											"hS80","hS81","hS82","hS83","hS84","hS85","hS86","hS87","hS88","hS89",
-											"hS90","hS91","hS92","hS93","hS94","hS95","hS96","hS97","hS98","hS99",
-											"hD00","hD01","hD02","hD03","hD04","hD05","hD06","hD07","hD08","hD09",
-											"hD10","hD11","hD12","hD13","hD14","hD15","hD16","hD17","hD18","hD19",
-											"hD20","hD21","hD22","hD23","hD24","hD25","hD26","hD27","hD28","hD29",
-											"hD30","hD31","hD32","hD33","hD34","hD35","hD36","hD37","hD38","hD39",
-											"hD40","hD41","hD42","hD43","hD44","hD45","hD46","hD47","hD48","hD49",
-											"hD50","hD51","hD52","hD53","hD54","hD55","hD56","hD57","hD58","hD59",
-											"hD60","hD61","hD62","hD63","hD64","hD65","hD66","hD67","hD68","hD69",
-											"hD70","hD71","hD72","hD73","hD74","hD75","hD76","hD77","hD78","hD79",
-											"hD80","hD81","hD82","hD83","hD84","hD85","hD86","hD87","hD88","hD89",
-											"hD90","hD91","hD92","hD93","hD94","hD95","hD96","hD97","hD98","hD99",
 											"vA00","vA01","vA02","vA03","vA04","vA05","vA06","vA07","vA08","vA09",
 											"vA10","vA11","vA12","vA13","vA14","vA15","vA16","vA17","vA18","vA19",
 											"vA20","vA21","vA22","vA23","vA24","vA25","vA26","vA27","vA28","vA29",
@@ -82,6 +42,16 @@ public class OceanTester extends AssignmentTester{
 											"vA70","vA71","vA72","vA73","vA74","vA75","vA76","vA77","vA78","vA79",
 											"vA80","vA81","vA82","vA83","vA84","vA85","vA86","vA87","vA88","vA89",
 											"vA90","vA91","vA92","vA93","vA94","vA95","vA96","vA97","vA98","vA99",
+											"hB00","hB01","hB02","hB03","hB04","hB05","hB06","hB07","hB08","hB09",
+											"hB10","hB11","hB12","hB13","hB14","hB15","hB16","hB17","hB18","hB19",
+											"hB20","hB21","hB22","hB23","hB24","hB25","hB26","hB27","hB28","hB29",
+											"hB30","hB31","hB32","hB33","hB34","hB35","hB36","hB37","hB38","hB39",
+											"hB40","hB41","hB42","hB43","hB44","hB45","hB46","hB47","hB48","hB49",
+											"hB50","hB51","hB52","hB53","hB54","hB55","hB56","hB57","hB58","hB59",
+											"hB60","hB61","hB62","hB63","hB64","hB65","hB66","hB67","hB68","hB69",
+											"hB70","hB71","hB72","hB73","hB74","hB75","hB76","hB77","hB78","hB79",
+											"hB80","hB81","hB82","hB83","hB84","hB85","hB86","hB87","hB88","hB89",
+											"hB90","hB91","hB92","hB93","hB94","hB95","hB96","hB97","hB98","hB99",
 											"vB00","vB01","vB02","vB03","vB04","vB05","vB06","vB07","vB08","vB09",
 											"vB10","vB11","vB12","vB13","vB14","vB15","vB16","vB17","vB18","vB19",
 											"vB20","vB21","vB22","vB23","vB24","vB25","vB26","vB27","vB28","vB29",
@@ -92,6 +62,16 @@ public class OceanTester extends AssignmentTester{
 											"vB70","vB71","vB72","vB73","vB74","vB75","vB76","vB77","vB78","vB79",
 											"vB80","vB81","vB82","vB83","vB84","vB85","vB86","vB87","vB88","vB89",
 											"vB90","vB91","vB92","vB93","vB94","vB95","vB96","vB97","vB98","vB99",
+											"hC00","hC01","hC02","hC03","hC04","hC05","hC06","hC07","hC08","hC09",
+											"hC10","hC11","hC12","hC13","hC14","hC15","hC16","hC17","hC18","hC19",
+											"hC20","hC21","hC22","hC23","hC24","hC25","hC26","hC27","hC28","hC29",
+											"hC30","hC31","hC32","hC33","hC34","hC35","hC36","hC37","hC38","hC39",
+											"hC40","hC41","hC42","hC43","hC44","hC45","hC46","hC47","hC48","hC49",
+											"hC50","hC51","hC52","hC53","hC54","hC55","hC56","hC57","hC58","hC59",
+											"hC60","hC61","hC62","hC63","hC64","hC65","hC66","hC67","hC68","hC69",
+											"hC70","hC71","hC72","hC73","hC74","hC75","hC76","hC77","hC78","hC79",
+											"hC80","hC81","hC82","hC83","hC84","hC85","hC86","hC87","hC88","hC89",
+											"hC90","hC91","hC92","hC93","hC94","hC95","hC96","hC97","hC98","hC99",
 											"vC00","vC01","vC02","vC03","vC04","vC05","vC06","vC07","vC08","vC09",
 											"vC10","vC11","vC12","vC13","vC14","vC15","vC16","vC17","vC18","vC19",
 											"vC20","vC21","vC22","vC23","vC24","vC25","vC26","vC27","vC28","vC29",
@@ -102,6 +82,16 @@ public class OceanTester extends AssignmentTester{
 											"vC70","vC71","vC72","vC73","vC74","vC75","vC76","vC77","vC78","vC79",
 											"vC80","vC81","vC82","vC83","vC84","vC85","vC86","vC87","vC88","vC89",
 											"vC90","vC91","vC92","vC93","vC94","vC95","vC96","vC97","vC98","vC99",
+											"hS00","hS01","hS02","hS03","hS04","hS05","hS06","hS07","hS08","hS09",
+											"hS10","hS11","hS12","hS13","hS14","hS15","hS16","hS17","hS18","hS19",
+											"hS20","hS21","hS22","hS23","hS24","hS25","hS26","hS27","hS28","hS29",
+											"hS30","hS31","hS32","hS33","hS34","hS35","hS36","hS37","hS38","hS39",
+											"hS40","hS41","hS42","hS43","hS44","hS45","hS46","hS47","hS48","hS49",
+											"hS50","hS51","hS52","hS53","hS54","hS55","hS56","hS57","hS58","hS59",
+											"hS60","hS61","hS62","hS63","hS64","hS65","hS66","hS67","hS68","hS69",
+											"hS70","hS71","hS72","hS73","hS74","hS75","hS76","hS77","hS78","hS79",
+											"hS80","hS81","hS82","hS83","hS84","hS85","hS86","hS87","hS88","hS89",
+											"hS90","hS91","hS92","hS93","hS94","hS95","hS96","hS97","hS98","hS99",
 											"vS00","vS01","vS02","vS03","vS04","vS05","vS06","vS07","vS08","vS09",
 											"vS10","vS11","vS12","vS13","vS14","vS15","vS16","vS17","vS18","vS19",
 											"vS20","vS21","vS22","vS23","vS24","vS25","vS26","vS27","vS28","vS29",
@@ -112,6 +102,16 @@ public class OceanTester extends AssignmentTester{
 											"vS70","vS71","vS72","vS73","vS74","vS75","vS76","vS77","vS78","vS79",
 											"vS80","vS81","vS82","vS83","vS84","vS85","vS86","vS87","vS88","vS89",
 											"vS90","vS91","vS92","vS93","vS94","vS95","vS96","vS97","vS98","vS99",
+											"hD00","hD01","hD02","hD03","hD04","hD05","hD06","hD07","hD08","hD09",
+											"hD10","hD11","hD12","hD13","hD14","hD15","hD16","hD17","hD18","hD19",
+											"hD20","hD21","hD22","hD23","hD24","hD25","hD26","hD27","hD28","hD29",
+											"hD30","hD31","hD32","hD33","hD34","hD35","hD36","hD37","hD38","hD39",
+											"hD40","hD41","hD42","hD43","hD44","hD45","hD46","hD47","hD48","hD49",
+											"hD50","hD51","hD52","hD53","hD54","hD55","hD56","hD57","hD58","hD59",
+											"hD60","hD61","hD62","hD63","hD64","hD65","hD66","hD67","hD68","hD69",
+											"hD70","hD71","hD72","hD73","hD74","hD75","hD76","hD77","hD78","hD79",
+											"hD80","hD81","hD82","hD83","hD84","hD85","hD86","hD87","hD88","hD89",
+											"hD90","hD91","hD92","hD93","hD94","hD95","hD96","hD97","hD98","hD99",
 											"vD00","vD01","vD02","vD03","vD04","vD05","vD06","vD07","vD08","vD09",
 											"vD10","vD11","vD12","vD13","vD14","vD15","vD16","vD17","vD18","vD19",
 											"vD20","vD21","vD22","vD23","vD24","vD25","vD26","vD27","vD28","vD29",
@@ -122,29 +122,77 @@ public class OceanTester extends AssignmentTester{
 											"vD70","vD71","vD72","vD73","vD74","vD75","vD76","vD77","vD78","vD79",
 											"vD80","vD81","vD82","vD83","vD84","vD85","vD86","vD87","vD88","vD89",
 											"vD90","vD91","vD92","vD93","vD94","vD95","vD96","vD97","vD98","vD99"};
-	
-	private String names = "Cruiser.AircraftCarrier.Battleship.Submarine.Destroyer.";
-	private String orientations = "vertical.horizontal.";
+
 	
 	protected AssignmentTestCase[] getCases()
 	{
-		AssignmentTestCase[] tests = new AssignmentTestCase[1];
+		AssignmentTestCase[] tests = new AssignmentTestCase[10000];
 		tests[0] = new OceanTestCase(null,null);
-		return tests;
-	}
-	
-	private Boat[] buildFleet(int[] stringPositions)
-	{
-		Boat[] fleet = new Boat[stringPositions.length];
-		for(int x=0; x< fleet.length;x++)
+		tests[1] = new OceanTestCase(null,null);
+		tests[2] = new OceanTestCase(null,null);
+		tests[3] = new OceanTestCase(null,null);
+		tests[4] = new OceanTestCase(null,null);
+		tests[5] = new OceanTestCase(null,null);
+		tests[6] = new OceanTestCase(null,null);
+		tests[7] = new OceanTestCase(null,null);
+		tests[8] = new OceanTestCase(null,null);
+		tests[9] = new OceanTestCase(null,null);
+		tests[10] = new OceanTestCase(null,null);
+		tests[11] = new OceanTestCase(null,null);
+		tests[12] = new OceanTestCase(null,null);
+		tests[13] = new OceanTestCase(null,null);
+		tests[14] = new OceanTestCase(null,null);
+		tests[15] = new OceanTestCase(null,null);
+		tests[16] = new OceanTestCase(null,null);
+		tests[17] = new OceanTestCase(null,null);
+		tests[18] = new OceanTestCase(null,null);
+		tests[19] = new OceanTestCase(null,null);
+		tests[20] = new OceanTestCase(null,null);
+		tests[21] = new OceanTestCase(null,null);
+		tests[22] = new OceanTestCase(null,null);
+		tests[23] = new OceanTestCase(null,null);
+		tests[24] = new OceanTestCase(null,null);
+		tests[25] = new OceanTestCase(null,null);
+		tests[26] = new OceanTestCase(null,null);
+		tests[27] = new OceanTestCase(null,null);
+		tests[28] = new OceanTestCase(null,null);
+		tests[29] = new OceanTestCase(null,null);
+		tests[30] = new OceanTestCase(null,null);
+		tests[31] = new OceanTestCase(null,null);
+		tests[32] = new OceanTestCase(null,null);
+		tests[33] = new OceanTestCase(null,null);
+		tests[34] = new OceanTestCase(null,null);
+		tests[35] = new OceanTestCase(null,null);
+		tests[36] = new OceanTestCase(null,null);
+		tests[37] = new OceanTestCase(null,null);
+		tests[38] = new OceanTestCase(null,null);
+		tests[39] = new OceanTestCase(null,null);
+		tests[40] = new OceanTestCase(null,null);
+		Boat[] boatList = new Boat[5];
+		Position[] posList = null;
+		for(int x=0;x<10000;x++)
 		{
-			fleet[x] = buildBoat(boats[stringPositions[x]]);
+			for(int y=0; y<5;y++)
+			{
+				String boat = boats[((int)(Math.random()*200)) + (200*y)];
+				boatList[y] = buildBoat(boat);
+			}
+			posList = new Position[(int)(Math.random() * 50) + 50];
+			for(int y=0; y<posList.length;y++)
+			{
+				posList[y] = p[(int)(Math.random()*10)][(int)(Math.random()*10)];
+			}
+			tests[0+x] = new OceanTestCase(boatList,posList);
+			if(x % 100 == 0 )
+				System.out.println((double)x/100 + "%");
 		}
-		return fleet;
+		return tests;
 	}
 	
 	private Boat buildBoat(String s)
 	{
+		String names = "Cruiser.AircraftCarrier.Battleship.Submarine.Destroyer.";
+		String orientations = "vertical.horizontal.";
 		//This will build you literally ANY BOAT you want, just feed it the string from the above array
 		return new Boat(names.substring(names.indexOf(s.substring(1,2)),names.indexOf(".",names.indexOf(s.substring(1,2)))),new Position(Integer.parseInt(s.substring(2,3)),Integer.parseInt(s.substring(3,4))),orientations.substring(orientations.indexOf(s.substring(0,1)),orientations.indexOf(".",orientations.indexOf(s.substring(0,1)))));
 	}

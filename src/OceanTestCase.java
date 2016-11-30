@@ -10,11 +10,29 @@ public class OceanTestCase extends AssignmentTestCase{
 	private ArrayList<String> placedBoats;
 	private ArrayList<String> shotsFired; 
 
-	public OceanTestCase(Boat[] boats, Position[] positions)
+	public OceanTestCase(Boat[] boatArray, Position[] positionArray)
 	{
-		System.arraycopy(boats, 0, this.boats, 0, boats.length);
-		System.arraycopy(positions, 0, this.positions, 0, positions.length);
+		if(boatArray == null)
+		{
+			boats = null;
+		}
+		else
+		{
+			boats = new Boat[boatArray.length];
+			System.arraycopy(boatArray, 0, boats, 0, boatArray.length);
+		}
+		if(positionArray == null)
+		{
+			positions = null;
+		}
+		else
+		{
+			positions = new Position[positionArray.length];
+			System.arraycopy(positionArray, 0, positions, 0, positionArray.length);
+		}
 		placedBoats = new ArrayList<String>();
+		ocean = new Ocean();
+		goodOcean = new GoodOcean();
 	}
 
 	protected boolean runTestCase()
@@ -75,27 +93,29 @@ public class OceanTestCase extends AssignmentTestCase{
 		for(int x=0; x<positions.length;x++)
 		{
 			String shots = "Shots: ";
+			if(positions[x] == null)
+				System.out.println("Java is cancer");
 			ocean.shootAt(new Position(positions[x].rowIndex(),positions[x].columnIndex())); 
 			shots = shots +  positions[x].rowIndex() + " " + positions[x].columnIndex() + ",";
 			goodOcean.shootAt(new Position(positions[x].rowIndex(),positions[x].columnIndex()));
 			if(ocean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())) != goodOcean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())))
 			{
 				//errorReportinggggg
-				System.out.println(shots + "\nHit returns " + ocean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex()) 
-				+ ", should return " + goodOcean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex()))));
+				System.out.println(shots + "\nHit returns " + ocean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex()))
+						+ ", should return " + goodOcean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())));
 				return false;
 			}
 			if(ocean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex())) != goodOcean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex())))
 			{
 				//errorReporting
-						System.out.println(shots + "\nSunk returns " + ocean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex()) 
-						+ ", should return " + goodOcean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex()))));
+				System.out.println(shots + "\nSunk returns " + ocean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex())) 
+						+ ", should return " + goodOcean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex())));
 				return false;
 			}
 			if(ocean.allSunk() != goodOcean.allSunk())
 			{
 				//errorReporting
-						System.out.println(shots + "\nAll sunk returns " + ocean.allSunk() + ", should return " + goodOcean.allSunk());
+				System.out.println(shots + "\nAll sunk returns " + ocean.allSunk() + ", should return " + goodOcean.allSunk());
 				return false;
 			}
 			if(goodOcean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())))
@@ -103,15 +123,15 @@ public class OceanTestCase extends AssignmentTestCase{
 				if(!(ocean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex())).equals(goodOcean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex())))))
 				{
 					//errorReporting
-							System.out.println(shots + "\nBoat Name returns " + ocean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex())
-							+ ", should return " + goodOcean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex()))));
+					System.out.println(shots + "\nBoat Name returns " + ocean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex()))
+							+ ", should return " + goodOcean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex())));
 					return false;
 				}
-				if(!(ocean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex())).equals(goodOcean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex())))))
+				if(!(ocean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex()))==(goodOcean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex())))))
 				{
 					//errorReporting
-							System.out.println(shots + "\nBoat Initial returns " + ocean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex())
-							+ ", should return " + goodOcean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex()))));
+					System.out.println(shots + "\nBoat Initial returns " + ocean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex()))
+							+ ", should return " + goodOcean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex())));
 					return false;
 				}
 			}
