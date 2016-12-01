@@ -90,9 +90,9 @@ public class OceanTestCase extends AssignmentTestCase{
 			goodOceanError = false;
 		}
 		//Now we fire the cannons and pull out the clipboards
+		String shots = "Shots: ";
 		for(int x=0; x<positions.length;x++)
 		{
-			String shots = "Shots: ";
 			if(positions[x] == null)
 				System.out.println("Java is cancer");
 			ocean.shootAt(new Position(positions[x].rowIndex(),positions[x].columnIndex())); 
