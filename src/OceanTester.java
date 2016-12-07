@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 
 public class OceanTester extends AssignmentTester{
 	
@@ -126,11 +128,11 @@ public class OceanTester extends AssignmentTester{
 	
 	protected AssignmentTestCase[] getCases()
 	{
-		AssignmentTestCase[] tests = new AssignmentTestCase[10000];
-		tests[0] = new OceanTestCase(null,null);
-		tests[1] = new OceanTestCase(null,null);
-		tests[2] = new OceanTestCase(null,null);
-		tests[3] = new OceanTestCase(null,null);
+		AssignmentTestCase[] tests = new AssignmentTestCase[40];
+		tests[0] = new OceanTestCase(buildFleet(new int[] {0,300,360,491,704,605,808}),new Position[] {p[0][0],p[0][1],p[0][2],p[0][3],p[0][4],p[0][5],p[0][6],p[0][7],p[0][8],p[0][9],p[5][5],p[9][0],p[8][0],p[7][0],p[6][0],p[9][1],p[9][2],p[5][4],p[5][3],p[9][3]});
+		tests[1] = new OceanTestCase(buildFleet(new int[] {159,368,497,487,577,703,800}),new Position[] {p[9][9],p[8][9],p[7][9],p[6][9],p[5][9],p[9][8],p[8][8],p[7][8],p[6][8],p[9][7],p[8][7],p[7][7],p[6][7],p[0][0],p[2][3],p[1][3],p[0][1],p[0][3]});
+		tests[2] = new OceanTestCase(buildFleet(new int[] {90,295,579,687,600,887}),new Position[]{p[9][0],p[9][1],p[9][2],p[9][3],p[9][5],p[9][6],p[9][7],p[9][9],p[8][9],p[0][3],p[0][1],p[8][8],p[0][2],p[9][4],p[7][9],p[8][8],p[9][8]});
+		tests[3] = new OceanTestCase(buildFleet(new int[] {150,291,695,578,898,899,888,878,969}),new Position[] {p[5][0],p[6][0],p[7][0],p[8][0],p[9][0],p[9][1],p[9][2],p[9][3],p[9][5],p[7][8],p[6][9],p[7][9],p[8][8],p[8][9],p[9][6],p[9][7],p[9][4]});
 		tests[4] = new OceanTestCase(null,null);
 		tests[5] = new OceanTestCase(null,null);
 		tests[6] = new OceanTestCase(null,null);
@@ -168,25 +170,32 @@ public class OceanTester extends AssignmentTester{
 		tests[38] = new OceanTestCase(null,null);
 		tests[39] = new OceanTestCase(null,null);
 		tests[40] = new OceanTestCase(null,null);
-		Boat[] boatList = new Boat[5];
-		Position[] posList = null;
-		for(int x=0;x<10000;x++)
-		{
-			for(int y=0; y<5;y++)
-			{
-				String boat = boats[((int)(Math.random()*200)) + (200*y)];
-				boatList[y] = buildBoat(boat);
-			}
-			posList = new Position[(int)(Math.random() * 50) + 50];
-			for(int y=0; y<posList.length;y++)
-			{
-				posList[y] = p[(int)(Math.random()*10)][(int)(Math.random()*10)];
-			}
-			tests[0+x] = new OceanTestCase(boatList,posList);
-			if(x % 100 == 0 )
-				System.out.println((double)x/100 + "%");
-		}
 		return tests;
+	}
+	
+	public static void main(String [] args)
+	{
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.next();
+		while(true)
+		{
+			for(int x=0; x<boats.length;x++)
+			{
+				if(boats[x].equals(input))
+					System.out.println(x);
+			}
+			input=scanner.next();
+		}
+	}
+	
+	private Boat[] buildFleet(int[] indices)
+	{
+		Boat[] fleet = new Boat[indices.length];
+		for(int x=0; x< indices.length;x++)
+		{
+			fleet[x] = buildBoat(boats[indices[x]]);
+		}
+		return fleet;
 	}
 	
 	private Boat buildBoat(String s)

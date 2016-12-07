@@ -44,7 +44,7 @@ public class OceanTestCase extends AssignmentTestCase{
 		{
 			problemFinder.findProblem();
 			//TODO: Use return value for error reporting
-			return false;
+					return false;
 		}
 		for(int x=0; x<boats.length;x++)
 		{
