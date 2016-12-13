@@ -144,7 +144,7 @@ public class OceanTester extends AssignmentTester{
 		tests[12] = new OceanTestCase(buildFleet(new int[] {5, 307, 369, 743, 452, 461, 490, 803, }),new Position[] {p[0][2],p[0][3],p[0][4],p[0][5],p[0][6],p[0][7],p[0][8],p[0][9],p[3][7],p[4][3],p[5][3],p[7][3],p[9][0],p[9][1],p[9][2],p[9][3],p[5][9],p[6][9],p[7][9],p[8][9],p[9][9],p[5][2],p[5][3],p[6][1],p[6][2]});
 		tests[13] = new OceanTestCase(buildFleet(new int[] {100, 290, 410, 220, 230, 240, 522, 707, 977}),new Position[] {p[0][0],p[0][1],p[0][2],p[0][3],p[1][1],p[2][0],p[3][0],p[4][0],p[5][0]});
 		tests[14] = new OceanTestCase(buildFleet(new int[] {185, 373, 638, 459, 998, 5, 295, 609, 539, 856}),new Position[] {p[0][4],p[0][5],p[0][6],p[0][7],p[0][8],p[0][9],p[3][8],p[3][9],p[5][9],p[5][8],p[5][7],p[5][6],p[5][5],p[9][0],p[9][1],p[9][2],p[9][3],p[9][4],p[9][5],p[9][6],p[9][7],p[9][8],p[7][3]});
-		tests[15] = new OceanTestCase(null,null);
+		tests[15] = new OceanTestCase(buildFleet(new int[] {109, 216, 306, 457, 677, 899, 898}),new Position[] {p[0][9],p[1][9],p[2][9],p[3][9],p[4][9],p[5][9],p[6][9],p[7][9],p[8][9],p[9][9],p[0][8],p[1][8],p[2][8],p[3][8],p[4][8],p[5][8],p[6][8],p[7][8],p[8][8],p[9][8],p[0][7],p[1][7],p[2][7],p[3][7],p[4][7],p[5][7],p[6][7],p[7][7],p[8][7],p[9][7],p[0][6],p[1][6],p[2][6],p[3][6],p[4][6],p[5][6],p[6][6],p[6][7]});
 		tests[16] = new OceanTestCase(null,null);
 		tests[17] = new OceanTestCase(null,null);
 		tests[18] = new OceanTestCase(null,null);

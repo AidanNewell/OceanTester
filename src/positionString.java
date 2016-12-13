@@ -3,7 +3,7 @@
 
 public class positionString {
 	public static void main(String args[]){
-		String positions = "04 05 06 07 08 09 38 39 59 58 57 56 55 90 91 92 93 94 95 96 97 98 73";
+		String positions = "09 19 29 39 49 59 69 79 89 99 08 18 28 38 48 58 68 78 88 98 07 17 27 37 47 57 67 77 87 97 06 16 26 36 46 56 66 67";
 		String nice = "new Position[] {";
 		for(int i = 0; i<positions.length();i+=3){
 			nice = nice + "p[" + positions.substring(i,i+1) + "][" +  positions.substring(i+1,i+2) + "]";
