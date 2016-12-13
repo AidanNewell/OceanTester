@@ -8,7 +8,6 @@ public class OceanTestCase extends AssignmentTestCase{
 	private Ocean ocean;
 	private GoodOcean goodOcean;
 	private ArrayList<String> placedBoats;
-	private ArrayList<String> shotsFired; 
 
 	public OceanTestCase(Boat[] boatArray, Position[] positionArray)
 	{
@@ -44,7 +43,7 @@ public class OceanTestCase extends AssignmentTestCase{
 		{
 			problemFinder.findProblem();
 			//TODO: Use return value for error reporting
-					return false;
+			return false;
 		}
 		for(int x=0; x<boats.length;x++)
 		{
@@ -73,28 +72,11 @@ public class OceanTestCase extends AssignmentTestCase{
 			}
 			oceanError = false;
 			goodOceanError = false;
-			//THIS IS NOT A MISTAKE COPY IT IS TO LOOK FOR GHOST BOATS ~DONE ME A SPOOK~
-			try{
-				ocean.placeBoat(currentBoat.name(),currentBoat.direction(),currentBoat.position());
-			}catch(Exception e){oceanError = true;};
-			try{
-				goodOcean.placeBoat(currentBoat.name(),currentBoat.direction(),currentBoat.position());
-			}catch(Exception e){goodOceanError = true;};
-			if(oceanError != goodOceanError)
-			{
-				//error reporting
-				System.out.println("This is a help");
-				return false;
-			}
-			oceanError = false;
-			goodOceanError = false;
 		}
 		//Now we fire the cannons and pull out the clipboards
 		String shots = "Shots: ";
 		for(int x=0; x<positions.length;x++)
 		{
-			if(positions[x] == null)
-				System.out.println("Java is cancer");
 			ocean.shootAt(new Position(positions[x].rowIndex(),positions[x].columnIndex())); 
 			shots = shots +  positions[x].rowIndex() + " " + positions[x].columnIndex() + ",";
 			goodOcean.shootAt(new Position(positions[x].rowIndex(),positions[x].columnIndex()));

@@ -128,7 +128,7 @@ public class OceanTester extends AssignmentTester{
 	
 	protected AssignmentTestCase[] getCases()
 	{
-		AssignmentTestCase[] tests = new AssignmentTestCase[40];
+		AssignmentTestCase[] tests = new AssignmentTestCase[17];
 		tests[0] = new OceanTestCase(buildFleet(new int[] {0,300,360,491,704,605,808}),new Position[] {p[0][0],p[0][1],p[0][2],p[0][3],p[0][4],p[0][5],p[0][6],p[0][7],p[0][8],p[0][9],p[5][5],p[9][0],p[8][0],p[7][0],p[6][0],p[9][1],p[9][2],p[5][4],p[5][3],p[9][3]});
 		tests[1] = new OceanTestCase(buildFleet(new int[] {159,368,497,487,577,703,800}),new Position[] {p[9][9],p[8][9],p[7][9],p[6][9],p[5][9],p[9][8],p[8][8],p[7][8],p[6][8],p[9][7],p[8][7],p[7][7],p[6][7],p[0][0],p[2][3],p[1][3],p[0][1],p[0][3]});
 		tests[2] = new OceanTestCase(buildFleet(new int[] {90,295,579,687,600,887}),new Position[]{p[9][0],p[9][1],p[9][2],p[9][3],p[9][5],p[9][6],p[9][7],p[9][9],p[8][9],p[0][3],p[0][1],p[8][8],p[0][2],p[9][4],p[7][9],p[8][8],p[9][8]});
@@ -146,54 +146,9 @@ public class OceanTester extends AssignmentTester{
 		tests[14] = new OceanTestCase(buildFleet(new int[] {185, 373, 638, 459, 998, 5, 295, 609, 539, 856}),new Position[] {p[0][4],p[0][5],p[0][6],p[0][7],p[0][8],p[0][9],p[3][8],p[3][9],p[5][9],p[5][8],p[5][7],p[5][6],p[5][5],p[9][0],p[9][1],p[9][2],p[9][3],p[9][4],p[9][5],p[9][6],p[9][7],p[9][8],p[7][3]});
 		tests[15] = new OceanTestCase(buildFleet(new int[] {109, 216, 306, 457, 677, 899, 898}),new Position[] {p[0][9],p[1][9],p[2][9],p[3][9],p[4][9],p[5][9],p[6][9],p[7][9],p[8][9],p[9][9],p[0][8],p[1][8],p[2][8],p[3][8],p[4][8],p[5][8],p[6][8],p[7][8],p[8][8],p[9][8],p[0][7],p[1][7],p[2][7],p[3][7],p[4][7],p[5][7],p[6][7],p[7][7],p[8][7],p[9][7],p[0][6],p[1][6],p[2][6],p[3][6],p[4][6],p[5][6],p[6][6],p[6][7]});
 		tests[16] = new OceanTestCase(buildFleet(new int[] {104, 213, 223, 225, 403, 402, 406, 602, 602, 601, 901, 915, 935}),new Position[] {p[0][0],p[0][1],p[0][2],p[0][3],p[0][4],p[0][5],p[0][6],p[0][7],p[0][8],p[0][9],p[1][0],p[1][1],p[1][2],p[1][3],p[1][4],p[1][5],p[1][6],p[1][7],p[1][8],p[1][9],p[2][0],p[2][1],p[2][2],p[2][3],p[2][4],p[2][5],p[2][6],p[2][7],p[2][8],p[2][9],p[3][0],p[3][1],p[3][2],p[3][3],p[3][4],p[3][6],p[3][7],p[3][8],p[3][9],p[4][0],p[4][1],p[4][2],p[4][3],p[4][4],p[4][5],p[4][6],p[4][7],p[4][8],p[4][9],p[5][0],p[5][1],p[5][2],p[5][3],p[5][4],p[5][5],p[5][6],p[5][7],p[5][8],p[5][9],p[6][0],p[6][1],p[6][2],p[6][3],p[6][4],p[6][5],p[6][6],p[6][7],p[6][8],p[6][9],p[7][0],p[7][1],p[7][2],p[7][3],p[7][4],p[7][5],p[7][6],p[7][7],p[7][8],p[7][9],p[8][0],p[8][1],p[8][2],p[8][3],p[8][4],p[8][5],p[8][6],p[8][7],p[8][8],p[8][9],p[9][0],p[9][1],p[9][2],p[9][3],p[9][4],p[9][5],p[9][6],p[9][7],p[9][8],p[9][9],p[3][5]});
-		tests[17] = new OceanTestCase(null,null);
-		tests[18] = new OceanTestCase(null,null);
-		tests[19] = new OceanTestCase(null,null);
-		tests[20] = new OceanTestCase(null,null);
-		tests[21] = new OceanTestCase(null,null);
-		tests[22] = new OceanTestCase(null,null);
-		tests[23] = new OceanTestCase(null,null);
-		tests[24] = new OceanTestCase(null,null);
-		tests[25] = new OceanTestCase(null,null);
-		tests[26] = new OceanTestCase(null,null);
-		tests[27] = new OceanTestCase(null,null);
-		tests[28] = new OceanTestCase(null,null);
-		tests[29] = new OceanTestCase(null,null);
-		tests[30] = new OceanTestCase(null,null);
-		tests[31] = new OceanTestCase(null,null);
-		tests[32] = new OceanTestCase(null,null);
-		tests[33] = new OceanTestCase(null,null);
-		tests[34] = new OceanTestCase(null,null);
-		tests[35] = new OceanTestCase(null,null);
-		tests[36] = new OceanTestCase(null,null);
-		tests[37] = new OceanTestCase(null,null);
-		tests[38] = new OceanTestCase(null,null);
-		tests[39] = new OceanTestCase(null,null);
-		tests[40] = new OceanTestCase(null,null);
 		return tests;
 	}
 	
-	public static void main(String [] args)
-	{
-		Scanner scanner = new Scanner(System.in);
-		String input = scanner.nextLine();
-		while(true){
-			String nice = "buildFleet(new int[] {";
-			for(int i=0;i<input.length();i+=5){
-				String boat = input.substring(i,i+4);
-				for(int x=0; x<boats.length;x++)
-				{
-					if(boats[x].equals(boat))
-						nice = nice + x;
-				}
-				if(i!=input.length()-4)
-					nice = nice + ", ";
-			}
-			nice = nice + "})";
-			System.out.println(nice);
-			input = scanner.nextLine();
-		}
-	}
 	
 	private Boat[] buildFleet(int[] indices)
 	{
