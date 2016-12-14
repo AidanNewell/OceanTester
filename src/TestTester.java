@@ -9,5 +9,6 @@ public class TestTester {
 			testsss[x].runTestCase();
 			}catch(Exception e){System.out.println(x);e.printStackTrace();}
 		}
+		System.exit(0);
 	}
 }
