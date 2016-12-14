@@ -137,7 +137,7 @@ public class OceanTester extends AssignmentTester{
 		tests[6] = new OceanTestCase(buildFleet(new int[] {5, 206, 216, 417, 427, 729, 709, 729, 739, 832}),new Position[] {p[0][9],p[1][9],p[2][9],p[3][9],p[4][9],p[5][9],p[6][9],p[7][9],p[8][9],p[9][9],p[0][5],p[0][6],p[0][7],p[0][8],p[1][6],p[1][7],p[1][8],p[2][7],p[3][2],p[2][8],p[3][3]});
 		tests[7] = new OceanTestCase(buildFleet(new int[] {100, 200, 434, 738, 877, 292}),new Position[] {p[0][0],p[2][0],p[4][0],p[0][1],p[4][1],p[3][3],p[3][4],p[3][5],p[3][6],p[3][7],p[2][5],p[2][8],p[3][8],p[4][8],p[5][8],p[6][8],p[7][7],p[7][3],p[7][7],p[7][8],p[9][2],p[9][3],p[9][4],p[9][5],p[9][6]});
 		tests[8] = new OceanTestCase(buildFleet(new int[] {0, 220, 522, 738, 877, 292}),new Position[] {p[0][0],p[2][0],p[4][0],p[2][2],p[3][2],p[4][2],p[5][2],p[2][3],p[2][5],p[2][8],p[3][8],p[4][8],p[5][8],p[6][8],p[7][7],p[7][3],p[7][7],p[7][8],p[9][2],p[9][3],p[9][4],p[9][5],p[9][6]});
-		tests[9] = new OceanTestCase(buildFleet(new int[] {0, 340, 522, 738, 877, 292}),new Position[] {p[0][0],p[2][0],p[4][0],p[2][2],p[3][2],p[4][2],p[5][2],p[2][3],p[2][5],p[2][8],p[3][8],p[4][8],p[5][8],p[6][8],p[7][7],p[7][3],p[7][7],p[7][8],p[9][2],p[9][3],p[9][4],p[9][5],p[9][6]});
+		tests[9] = new OceanTestCase(buildFleet(new int[] {33, 303, 200, 510, 546, 664, 663, 935, 925}),new Position[] {p[3][3],p[3][4],p[3][5],p[3][6],p[3][7],p[3][8],p[3][9],p[0][0],p[0][1],p[0][2],p[0][3],p[0][4],p[0][5],p[0][6],p[0][7],p[0][8],p[0][9],p[4][6],p[5][6],p[6][6],p[6][3],p[6][4],p[6][5],p[3][5],p[4][5],p[2][5]});
 		tests[10] = new OceanTestCase(buildFleet(new int[] {5, 307, 369, 743, 490, 803}),new Position[] {p[0][2],p[0][3],p[0][4],p[0][5],p[0][6],p[0][7],p[0][8],p[0][9],p[3][7],p[4][3],p[5][3],p[7][3],p[9][0],p[9][1],p[9][2],p[9][3],p[5][9],p[6][9],p[7][9],p[8][9],p[9][9]});
 		tests[11] = new OceanTestCase(buildFleet(new int[] {5, 307, 369, 743, 452, 490, 803}),new Position[] {p[0][2],p[0][3],p[0][4],p[0][5],p[0][6],p[0][7],p[0][8],p[0][9],p[3][7],p[4][3],p[5][3],p[7][3],p[9][0],p[9][1],p[9][2],p[9][3],p[5][9],p[6][9],p[7][9],p[8][9],p[9][9],p[5][2],p[5][3]});
 		tests[12] = new OceanTestCase(buildFleet(new int[] {5, 307, 369, 743, 452, 461, 490, 803, }),new Position[] {p[0][2],p[0][3],p[0][4],p[0][5],p[0][6],p[0][7],p[0][8],p[0][9],p[3][7],p[4][3],p[5][3],p[7][3],p[9][0],p[9][1],p[9][2],p[9][3],p[5][9],p[6][9],p[7][9],p[8][9],p[9][9],p[5][2],p[5][3],p[6][1],p[6][2]});
@@ -165,5 +165,10 @@ public class OceanTester extends AssignmentTester{
 		String orientations = "vertical.horizontal.";
 		//This will build you literally ANY BOAT you want, just feed it the string from the above array
 		return new Boat(names.substring(names.indexOf(s.substring(1,2)),names.indexOf(".",names.indexOf(s.substring(1,2)))),new Position(Integer.parseInt(s.substring(2,3)),Integer.parseInt(s.substring(3,4))),orientations.substring(orientations.indexOf(s.substring(0,1)),orientations.indexOf(".",orientations.indexOf(s.substring(0,1)))));
+	}
+	
+	public static void main(String [] args)
+	{
+		
 	}
 }
