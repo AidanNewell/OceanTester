@@ -6,7 +6,10 @@ public class TestTester {
 		for(int x=0; x<testsss.length;x++)
 		{
 			if(!(testsss[x].runTestCase()))
+			{
+				System.err.println("Failed Test " + x);
 				System.exit(1);
+			}
 		}
 		System.exit(0);
 	}
