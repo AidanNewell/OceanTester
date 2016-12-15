@@ -50,12 +50,11 @@ public class OceanTestCase extends AssignmentTestCase{
 			Boat currentBoat = boats[x];
 			try{
 				ocean.placeBoat(currentBoat.name(),currentBoat.direction(),currentBoat.position());
-				placedBoats.add(currentBoat.direction().substring(0,1) + currentBoat.name().substring(0,1) + " "
-						+ currentBoat.position().row() + " " + currentBoat.position().column());
-
+				placedBoats.add(currentBoat.direction().substring(0,1) + currentBoat.name().substring(0,1)
+						+ currentBoat.position().row() + currentBoat.position().column());
 			}catch(Exception e){
 				oceanError = true;
-			};
+			}
 			try{
 				goodOcean.placeBoat(currentBoat.name(),currentBoat.direction(),currentBoat.position());
 			}catch(Exception e){goodOceanError = true;};
@@ -134,6 +133,7 @@ public class OceanTestCase extends AssignmentTestCase{
 			if(i != placedBoats.size()-1)
 				System.out.print(", ");
 		}
+		System.out.println();
 	}
 
 
