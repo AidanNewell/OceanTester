@@ -83,6 +83,7 @@ public class OceanTestCase extends AssignmentTestCase{
 			if(ocean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())) != goodOcean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())))
 			{
 				//errorReportinggggg
+				printBoatError();
 				System.out.println(shots + "\nHit returns " + ocean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex()))
 						+ ", should return " + goodOcean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())));
 				return false;
@@ -90,6 +91,7 @@ public class OceanTestCase extends AssignmentTestCase{
 			if(ocean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex())) != goodOcean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex())))
 			{
 				//errorReporting
+				printBoatError();
 				System.out.println(shots + "\nSunk returns " + ocean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex())) 
 						+ ", should return " + goodOcean.sunk(new Position(positions[x].rowIndex(),positions[x].columnIndex())));
 				return false;
@@ -97,6 +99,7 @@ public class OceanTestCase extends AssignmentTestCase{
 			if(ocean.allSunk() != goodOcean.allSunk())
 			{
 				//errorReporting
+				printBoatError();
 				System.out.println(shots + "\nAll sunk returns " + ocean.allSunk() + ", should return " + goodOcean.allSunk());
 				return false;
 			}
@@ -105,6 +108,7 @@ public class OceanTestCase extends AssignmentTestCase{
 				if(!(ocean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex())).equals(goodOcean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex())))))
 				{
 					//errorReporting
+					printBoatError();
 					System.out.println(shots + "\nBoat Name returns " + ocean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex()))
 							+ ", should return " + goodOcean.boatName(new Position(positions[x].rowIndex(),positions[x].columnIndex())));
 					return false;
@@ -112,6 +116,7 @@ public class OceanTestCase extends AssignmentTestCase{
 				if(!(ocean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex()))==(goodOcean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex())))))
 				{
 					//errorReporting
+					printBoatError();
 					System.out.println(shots + "\nBoat Initial returns " + ocean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex()))
 							+ ", should return " + goodOcean.boatInitial(new Position(positions[x].rowIndex(),positions[x].columnIndex())));
 					return false;
@@ -119,6 +124,16 @@ public class OceanTestCase extends AssignmentTestCase{
 			}
 		}
 		return true;
+	}
+	
+	private void printBoatError()
+	{
+		System.out.print("Boats:");
+		for(int i = 0; i<placedBoats.size(); i++){
+			System.out.print(placedBoats.get(i));
+			if(i != placedBoats.size()-1)
+				System.out.print(", ");
+		}
 	}
 
 
