@@ -62,7 +62,7 @@ public class OceanTestCase extends AssignmentTestCase{
 			{
 				//error reporting
 				printBoatError();
-				System.out.println("The boat " + currentBoat.abbreviation() + currentBoat.direction().substring(0,1) + currentBoat.position() + " "  + ((oceanError) ? "was not placed when it should have been." : "was placed when it should not have been."));
+				System.out.println("The boat " + currentBoat.abbreviation() + currentBoat.direction().substring(0,1).toUpperCase() + currentBoat.position() + " "  + ((oceanError) ? "was not placed when it should have been." : "was placed when it should not have been."));
 				return false;
 			}
 			oceanError = false;
