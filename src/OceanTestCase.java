@@ -61,12 +61,8 @@ public class OceanTestCase extends AssignmentTestCase{
 			if(oceanError != goodOceanError)
 			{
 				//error reporting
-				System.out.print("Boats: ");
-				for(int i = 0; i<placedBoats.size(); i++){
-					System.out.print(placedBoats.get(i));
-					if(i != placedBoats.size()-1)
-						System.out.print(", ");
-				}
+				printBoatError();
+				System.out.println("The boat " + currentBoat + " "  + ((oceanError) ? "was not placed when it should have been." : "was placed when it should not have been."));
 				return false;
 			}
 			oceanError = false;
