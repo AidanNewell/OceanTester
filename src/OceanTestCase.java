@@ -61,7 +61,7 @@ public class OceanTestCase extends AssignmentTestCase{
 			if(oceanError != goodOceanError)
 			{
 				//error reporting
-				System.out.print("Boats:");
+				System.out.print("Boats: ");
 				for(int i = 0; i<placedBoats.size(); i++){
 					System.out.print(placedBoats.get(i));
 					if(i != placedBoats.size()-1)
@@ -77,7 +77,7 @@ public class OceanTestCase extends AssignmentTestCase{
 		for(int x=0; x<positions.length;x++)
 		{
 			ocean.shootAt(new Position(positions[x].rowIndex(),positions[x].columnIndex())); 
-			shots = shots +  positions[x].rowIndex() + " " + positions[x].columnIndex() + ",";
+			shots = shots +  positions[x].rowIndex() + positions[x].columnIndex() + ", ";
 			goodOcean.shootAt(new Position(positions[x].rowIndex(),positions[x].columnIndex()));
 			if(ocean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())) != goodOcean.hit(new Position(positions[x].rowIndex(),positions[x].columnIndex())))
 			{
@@ -127,7 +127,7 @@ public class OceanTestCase extends AssignmentTestCase{
 	
 	private void printBoatError()
 	{
-		System.out.print("Boats:");
+		System.out.print("Boats: ");
 		for(int i = 0; i<placedBoats.size(); i++){
 			System.out.print(placedBoats.get(i));
 			if(i != placedBoats.size()-1)
