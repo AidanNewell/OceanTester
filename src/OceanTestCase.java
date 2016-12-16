@@ -51,7 +51,7 @@ public class OceanTestCase extends AssignmentTestCase{
 			try{
 				ocean.placeBoat(currentBoat.name(),currentBoat.direction(),currentBoat.position());
 				placedBoats.add(currentBoat.direction().substring(0,1) + currentBoat.name().substring(0,1)
-						+ currentBoat.position().row() + currentBoat.position().column());
+						+ " " + currentBoat.position());
 			}catch(Exception e){
 				oceanError = true;
 			}
@@ -62,7 +62,7 @@ public class OceanTestCase extends AssignmentTestCase{
 			{
 				//error reporting
 				printBoatError();
-				System.out.println("The boat " + currentBoat.abbreviation() + currentBoat.direction().substring(0,1).toUpperCase() + " " +currentBoat.position() + " "  + ((oceanError) ? "was not placed when it should have been." : "was placed when it should not have been."));
+				System.out.println("The boat " + currentBoat.direction().substring(0,1) + currentBoat.abbreviation()  + " " +currentBoat.position() + " "  + ((oceanError) ? "was not placed when it should have been." : "was placed when it should not have been."));
 				return false;
 			}
 			oceanError = false;
